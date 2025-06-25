@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-color-dropdown</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="page">
+        <p style="font-weight: bold;  color: blue;">select color</p>
+        <div id="container">
+            <label for="drop-down">Change Background Color</label>
+            <select name="color" id="color-select" onchange="changebackground()">
+                <option value="">--please select a color--</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+
+            <input type="text" id="newcolor" placeholder="add new color">
+            <button onclick="addcolor()">Add Color</button>
+        </div>
+    </div>
+    <!-- <script>
+        // List of colors
+        const colors = ["Red", "Blue", "Black", "Green", "Yellow", "Purple", "Orange"];
+
+        // Select the dropdown
+        const colorSelect = document.getElementById("color-select");
+
+        // Add options dynamically
+        colors.forEach(color => {
+            let option = document.createElement("option");
+            option.value = color.toLowerCase(); // Set value in lowercase
+            option.textContent = color; // Set visible text
+            colorSelect.appendChild(option);
+        });
+
+        // Change background color on selection
+        colorSelect.onchange = function () {
+            document.body.style.backgroundColor = this.value;
+        };
+    </script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
